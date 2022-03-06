@@ -128,4 +128,28 @@ body{
 }
 /* Home */
 
-
+.aboutus h1{
+    font-size: 2.4rem;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.aboutus{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 665px;
+    /* border: 2px solid red; */
+    height: 100vh;
+    padding: 2px;
+}
+.aboutus p{
+    margin: 14px;
+    font-size: xx-large;
+}
+.aboutus h2{
+    font-size: 1.84em;
+    color: #23bec3;
+    text-align: center;
+    font-weight: bold;
+}
