@@ -11,20 +11,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
 <body>
     <nav id="navbar">
-    <div id="logo">
-        <img src="sidd.jpg" alt="please Reload webpage">
-    </div>
-    <div>
-        <ul>
-            <li class="item"><a href="index.html">HOME</a></li>
-            <li class="item"><a href="#">SERVICE</a></li>
-            <li class="item"><a href="register.html">REGISTER</a></li>
-            <li class="item"><a href="#">CONTACT US</a></li>
-            <li class="item"><a href="signin.html">SIGN IN</a></li>
-        </ul>
-    </div>
-</nav>
-    <form action="backend.django"></form>
+        <div id="logo">
+            <img src="sidd.jpg" alt="please Reload webpage">
+        </div>
+        <div>
+            <ul class="sub-menu">
+                <li class="item"><a href="index.html">HOME</a></li>
+                <li class="item"><a href="#">SERVICE</a>
+                 <ul id="dropdown">
+                        <li><a href="#">food donate</a></li>
+                        <li><a href="#">List of hotel</a></li>
+                        <li><a href="#">information</a></li>
+                    </ul>
+                </li>
+                <li class="item"><a href="register.html">REGISTER</a></li>
+                <li class="item"><a href="#">CONTACT US</a></li>
+                <li class="item"><a href="signin.html">SIGN IN</a></li>
+            </ul>
+        </div>
+   </nav>
+    
+   <form action="backend.django"></form>
     <div class="container">
         <h1>REGISTER </h1>
         <P>PLEASE FILL IN THESE FORM TO CREATE AN ACCOUNT</P>
@@ -34,17 +41,18 @@
         <input type="radio" id="ngo" name="user"> NGO
           
        </div>
-        <!-- <label for="username" class="lb" id="lb1">Username</label>
-        <input type="text" name="myUsername" placeholder="Enter the username"> -->
+         <!-- <label for="username" class="lb" id="lb1">Username</label>
+        <input type="text" name="myUsername" placeholder="Enter the username">  -->
 
         <label for="hotel" class="lb" id="lb4">Name</label>
         <input type="text" name="myhotel" placeholder="Enter the  name">
         
+        <label for="email" class="lb" id="lb2">Email</label>
+        <input type="text" name="myEmail" placeholder="Enter the Email id">
+        
         <label for="Psw" class="lb" id="lb3">Password</label>
         <input type="password" name="myPassword" placeholder="Enter the password">
         
-        <label for="email" class="lb" id="lb2">Email</label>
-        <input type="text" name="myEmail" placeholder="Enter the Email id">
         
         <label for="contact" class="lb" id="lb5">Contact</label>
         <input type="tel" name="mycontact" placeholder="Enter the contact">
