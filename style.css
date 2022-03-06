@@ -1,4 +1,8 @@
 /* mid-container */
+*{
+  margin: 0px;
+  padding: 0px;
+}
 body {font-family: Arial, Helvetica, sans-serif;}
 body{
   background-color: rgb(212, 209, 209);
@@ -74,48 +78,45 @@ span.psw {
 
 /* navigation bar */
 #navbar{
-    position: sticky;
-    display: flex;
-    align-items: center;
-    top: 0px;
-    background-color: #110202;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  top: 0px;
+  background-color: #110202;
 }
-/* #navbar::before{
-    content: "";
-    background-color: rgb(245, 3, 3);
-    position: absolute;
-    top: 10px;
-    left: 0px;
-    height: 10%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.96;
-} */
-#navbar ul{
-    display: flex;
-    position: absolute;
-    right: 119px;
-    top: 8px;
-    
-    
+
+#navbar .sub-menu{
+  display: flex;
+  position: absolute;
+  right: 119px;
+  top: 2px;
+  
+  
 }
 #navbar ul li {
-    list-style: none;
-    font-size: 1.3rem;
-    font-family: 'Baloo Bhai 2', cursive;
-    
-    
+  list-style: none;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: 'Baloo Bhai 2', cursive;
+  
 }
 #navbar ul li a{
-    display: block;
-    color: white;
-    padding: 0px 18px;
-    text-decoration: none;
-    border-radius : 15px;
-    
+  display: block;
+  color: white;
+  padding: 18px 14px 17px 17px;
+  text-decoration: none;
+  background-color: black;
+  
+  
 }
-#navbar ul li a:hover{
-    /* background-color: white; */
-    color: rgb(187, 187, 187);
-
+#navbar  ul ul  {
+  display: none;
+}
+#navbar ul li  :hover{
+  
+  color: rgb(143, 138, 138);
+  
+}
+#navbar ul :hover #dropdown {
+   display: block;
 }
